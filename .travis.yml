@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker pull pcesarteixeira/docker-laravel
+
+script:
+  - docker run -i -t pcesarteixeira/docker-laravel /bin/bash
