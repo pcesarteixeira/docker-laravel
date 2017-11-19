@@ -7,4 +7,4 @@ before_install:
   - docker pull pcesarteixeira/docker-laravel
 
 script:
-  - docker build
+  - docker run pcesarteixeira/docker-laravel
